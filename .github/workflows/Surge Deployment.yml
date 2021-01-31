@@ -32,5 +32,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Installing Surge
         run: npm install --global surge
-        name: Deploying using surge
+      - name: Deploying using surge
         run: surge /Class1 bootcamp-shift1.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
